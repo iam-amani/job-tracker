@@ -14,11 +14,10 @@ A lightweight web app for tracking your job search  log every application, monit
 
 ##  Screenshots
 
-![App overview](images/image1.png)
- ![Add Item section](images/image2.png)
- ![Cards section](images/image3.png)
- ![Dashboard overview](images/image4.png)
-  ![Selling overview](images/image5.png)
+![App overview](images/Job-tracker2.png)
+ 
+ ![Dashboard overview](images/job-tracker1.png)
+  
 
 ---
 
