@@ -8,8 +8,7 @@ A lightweight web app for tracking your job search  log every application, monit
 
 ##  Live Demo
 
-> Coming soon — [deploy instructions below](#-deployment)
-
+ **Live Demo:** [amanidy.github.io/job-tracker](https://amanidy.github.io/job-tracker)
 ---
 
 ##  Screenshots
