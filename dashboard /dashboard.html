@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <title>Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Dashboard — Job Tracker</title>
 </head>
 
 <body>
+
   <div class="app">
+
     <header>
-      <h2> Dashboard</h2>
-      <p>Applications overview from job tracking</p>
+      <h2>Analytics <span>Dashboard</span></h2>
+      <p>A bird's eye view of your job search momentum.</p>
     </header>
 
     <a href="../index.html" class="back-btn">← Back to Applications</a>
-    
-     <section class="highlights">
+
+    <section class="highlights">
       <div class="card">
         <h3>📈</h3>
         <p class="title">Response Rate</p>
-        <p class="value" id="response-rate"> 0 %</p>
+        <p class="value" id="response-rate">0%</p>
       </div>
       <div class="card">
         <h3>🧾</h3>
@@ -31,23 +32,23 @@
       </div>
       <div class="card">
         <h3>📅</h3>
-        <p class="title">Applications Interviews</p>
+        <p class="title">Interviews</p>
         <p class="value" id="total-interviews">0</p>
       </div>
       <div class="card">
-        <h3>🤝 </h3>
-        <p class="title">Application Offers</p>
+        <h3>🤝</h3>
+        <p class="title">Offers</p>
         <p class="value" id="total-offers">0</p>
       </div>
     </section>
-    
+
     <section class="chart-section">
-      <h3 class="chart-title">📈 Daily Response Rate(Last 7 Days)</h3>
+      <h3 class="chart-title">📈 Daily Response Rate — Last 7 Days</h3>
       <canvas id="responseChart"></canvas>
     </section>
 
     <section class="chart-section">
-      <h3 class="chart-title">🏆 Top Application Status</h3>
+      <h3 class="chart-title">🏆 Application Status Breakdown</h3>
       <canvas id="topApplicationsChart"></canvas>
     </section>
 
@@ -56,11 +57,9 @@
       <canvas id="hourlyChart"></canvas>
     </section>
 
-    
   </div>
-  
-  <script src="../js/dashboard.js" type="text/javascript" charset="utf-8">
-  </script>
-</body>
 
+  <script src="../js/dashboard.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
 </html>

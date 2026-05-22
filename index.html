@@ -1,111 +1,100 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./style.css" />
-  <title>Job Tracker App</title>
+  <title>Job Tracker </title>
 </head>
 
 <body>
-  
+
   <header>
-    <h2>Hello,welcome to Job Tracker!</h2>
-    <p>Ready to track your job applications?</p>
-    <a href="./dashboard /dashboard.html" class="back-btn"> View Dashboard</a>
+    <h2>Job <span>Tracker</span></h2>
+    <p>Log applications, monitor progress, land the role.</p>
+    <a href="./dashboard /dashboard.html" class="back-btn">📊 View Dashboard</a>
   </header>
-  
-<button class="add-job"type="button">Add Job Application</button>
 
+  <button class="add-job" type="button">+ Add Application</button>
 
-  
   <section class="form-section">
-    <form id="form">
-      <h3 class="form-title">Add Job Application </h3>
-      
-      <div class="form-group">
-         <label for="name">Company's Name:</label>
-      <input type="text" name="name" id="name" value="" required/>
-      </div>
-      
-      <div class="form-group">
-       <label for="role">Role:</label>
-      <input type="text" name="role" id="role" value="" required/> 
-      </div>
-     
-      <div class="form-group">
-         <label for="url">Company's URL:</label>
-      <input type="text" name="url" id="url" value="" required/>
-      </div>
-      
-      <div class="form-group">
-         <label for="date">Date:</label>
-      <input type="text" name="date" id="date" required/>
-      </div>
-      
-      <div class="form-group">
-        
-       <label for="status">Status:</label>
-      <select name="status" id="status">Status
-      <option id="applied" default value="applied">Applied</option>
-      
-       <option value="phone">Phone Screen</option>
-        <option value="interview">Interview</option>
-         <option value="offer">Offer</option>
-          <option value="rejected">Rejected</option>
-           <option value="withdrawn">Withdrawn</option>
-            <option value="ghosted">Ghosted</option>
-      </select>
-      </div>
-      
-      <button onclick="handleAddSubmit(event)" class="submit-btn" type="submit">Submit Application</button>
-      
-     
-      
-    </form>
-    
-  </section>
-  
-  <section class="table-section">
-    <div>
-    <table class="application-table">
-    <thead>
-    <tr>
-    <th>Company's Name</th>
-    <th>Role</th>
-    <th>URL</th>
-    <th>Date</th>
-    <th>Status</th>
-    <th>Action buttons</th>
-    </tr>
-    </thead>
-    <tbody class="table-body"></tbody>
-      </div>
-    
-  </section>
-  
-  <div>
-      <buttton id="process-btn" type="submit">Process Applications</button>
-    </div>
-    
-    <div class="filter-buttons">
-  <button class="filter-btn active" onclick="handleFilter('All')">All</button>
-  <button class="filter-btn" onclick="handleFilter('Applied')">Applied</button>
-  <button class="filter-btn" onclick="handleFilter('Phone')">Phone</button>
-  <button class="filter-btn" onclick="handleFilter('Interview')">Interview</button>
-  <button class="filter-btn" onclick="handleFilter('Offer')">Offer</button>
-  <button class="filter-btn" onclick="handleFilter('Rejected')">Rejected</button>
-  <button class="filter-btn" onclick="handleFilter('Ghosted')">Ghosted</button>
-  <button class="filter-btn" onclick="handleFilter('Withdrawn')">Withdrawn</button>
-</div>
-  
-  <script src='./js/script.js' type="text/javascript" charset="utf-8">
-  </script>
-  
-   
-</body>
+    <div class="form">
+      <h3 class="form-title">New Application</h3>
+      <form id="form">
 
+        <div class="form-group">
+          <label for="name">Company Name</label>
+          <input type="text" name="name" id="name" placeholder="e.g. Safaricom" required />
+        </div>
+
+        <div class="form-group">
+          <label for="role">Role</label>
+          <input type="text" name="role" id="role" placeholder="e.g. Frontend Developer" required />
+        </div>
+
+        <div class="form-group">
+          <label for="url">Company URL</label>
+          <input type="text" name="url" id="url" placeholder="https://company.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date Applied</label>
+          <input type="text" name="date" id="date" placeholder="e.g. 2026-05-22" required />
+        </div>
+
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="applied" selected>Applied</option>
+            <option value="phone">Phone Screen</option>
+            <option value="interview">Interview</option>
+            <option value="offer">Offer</option>
+            <option value="rejected">Rejected</option>
+            <option value="withdrawn">Withdrawn</option>
+            <option value="ghosted">Ghosted</option>
+          </select>
+        </div>
+
+        <button onclick="handleAddSubmit(event)" class="submit-btn" type="submit">
+          Submit Application
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <section class="table-section">
+    <table class="application-table">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Role</th>
+          <th>URL</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody class="table-body"></tbody>
+    </table>
+  </section>
+
+  <div>
+    <button id="process-btn" type="button">Process Applications</button>
+  </div>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="handleFilter('All')">All</button>
+    <button class="filter-btn" onclick="handleFilter('Applied')">Applied</button>
+    <button class="filter-btn" onclick="handleFilter('Phone')">Phone</button>
+    <button class="filter-btn" onclick="handleFilter('Interview')">Interview</button>
+    <button class="filter-btn" onclick="handleFilter('Offer')">Offer</button>
+    <button class="filter-btn" onclick="handleFilter('Rejected')">Rejected</button>
+    <button class="filter-btn" onclick="handleFilter('Ghosted')">Ghosted</button>
+    <button class="filter-btn" onclick="handleFilter('Withdrawn')">Withdrawn</button>
+  </div>
+
+  <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
 </html>
