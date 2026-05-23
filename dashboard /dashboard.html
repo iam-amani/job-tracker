@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <title>Dashboard — Job Tracker</title>
 </head>
@@ -21,39 +22,39 @@
 
     <section class="highlights">
       <div class="card">
-        <h3>📈</h3>
+        <h3><i class="fa-solid fa-chart-line"></i></h3>
         <p class="title">Response Rate</p>
         <p class="value" id="response-rate">0%</p>
       </div>
       <div class="card">
-        <h3>🧾</h3>
+        <h3><i class="fa-solid fa-file-lines"></i></h3>
         <p class="title">Total Applications</p>
         <p class="value" id="total-applications">0</p>
       </div>
       <div class="card">
-        <h3>📅</h3>
+        <h3><i class="fa-solid fa-user-tie"></i></h3>
         <p class="title">Interviews</p>
         <p class="value" id="total-interviews">0</p>
       </div>
       <div class="card">
-        <h3>🤝</h3>
+        <h3><i class="fa-solid fa-handshake"></i></h3>
         <p class="title">Offers</p>
         <p class="value" id="total-offers">0</p>
       </div>
     </section>
 
     <section class="chart-section">
-      <h3 class="chart-title">📈 Daily Response Rate — Last 7 Days</h3>
+      <h3 class="chart-title"><i class="fa-solid fa-calendar-week"></i>Daily Response Rate — Last 7 Days</h3>
       <canvas id="responseChart"></canvas>
     </section>
 
     <section class="chart-section">
-      <h3 class="chart-title">🏆 Application Status Breakdown</h3>
+      <h3 class="chart-title"><i class="fa-solid fa-chart-pie"></i>Application Status Breakdown</h3>
       <canvas id="topApplicationsChart"></canvas>
     </section>
 
     <section class="chart-section">
-      <h3 class="chart-title">🕐 Applications by Hour</h3>
+      <h3 class="chart-title"><i class="fa-solid fa-clock"></i>Applications by Hour</h3>
       <canvas id="hourlyChart"></canvas>
     </section>
 
