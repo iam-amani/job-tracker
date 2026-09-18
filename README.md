@@ -1,5 +1,7 @@
 # Job Application Tracker (Coming Soon)
 
+ > Pole na safari!
+
 Losing track of how many doors you've knocked on for an opportunity?  
 Worry not - I am.I will.
 
