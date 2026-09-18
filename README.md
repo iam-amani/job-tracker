@@ -63,6 +63,6 @@ along the way.
 ##  Author
 
 **Arnold Amani**
-- GitHub: [@amanidy](https://github.com/iam-amani)
+- GitHub: [@iam-amani](https://github.com/iam-amani)
 
 ---
