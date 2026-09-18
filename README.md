@@ -1,72 +1,68 @@
-#  Job Application Tracker
+# Job Application Tracker (Coming Soon)
 
-A lightweight web app for tracking your job search  log every application, monitor its stage, follow up on time, and visualize your success rate with a built-in dashboard.
+Losing track of how many doors you've knocked on for an opportunity?  
+Worry not - I am.I will.
 
-> Built with vanilla JavaScript, HTML, and CSS. No frameworks. No backend. Just fast, persistent, and practical.
+A  web app intended for tracking your job search , log every application, monitor its stage, follow up on time and visualize your progress with a built-in dashboard.
+
+
 
 ---
 
-##  Live Demo
+## Live Demo
 
- **Live Demo:** [amanidy.github.io/job-tracker](https://amanidy.github.io/job-tracker)
+**Coming Soon**
+
 ---
 
-##  Screenshots
+## Screenshots
 
-![App overview](images/Job-tracker2.png)
- 
- ![Dashboard overview](images/job-tracker1.png)
-  
+**Coming Soon**
 
 ---
 
 ## Features
 
-- **Add Applications** — Log company name, role, date applied, and current status
+- **Add Applications** — Log company name, role, date applied, and current status.
 - **Track Stages** — Applied → Interview → Offer → Rejected → Followed Up
-- **Filter by Status** — Quickly view applications at any stage
-- **Success Rate Dashboard** — Chart.js visualization of your application outcomes
-- **Persistent Storage** — All data saved to localStorage, survives page reloads
-- **No Login Required** — Works entirely in the browser
+- **Filter by Status** — Quickly view applications at any stage.
+- **Dashboard** — Get an overview of your applications and progress.
+- **Follow-up Tracking** — Keep track of applications that need your attention.
+- **More** — More features will be added as the project grows.
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |---|---|
-| HTML5 | Structure |
-| CSS3 | Styling & responsive layout |
-| Vanilla JavaScript | Logic & DOM manipulation |
-| Chart.js | Analytics dashboard |
-| localStorage | Client-side data persistence |
+| Next.js | Application structure |
+| Tailwind CSS | Styling & responsive layout |
 
 ---
 
-##  Getting Started
+##  Why I am Building This
+
+Tracking job applications in a spreadsheet or email follow ups gets messy fast. I wanted something purposely built in a clean UI that shows exactly where every application stands and whether I need to follow up.
+
+I am building this project to **use it, learn from it, and explore areas like system design, SEO, and application architecture.**
+
+I'm still figuring out some of the technical decisions, including whether to go with **NextAuth or a NestJS backend.**
+
+And of course, there will probably be a few:
+
+> Next.js
+
+along the way.
+
+## Getting Started
 
 ### Run Locally
 
-```bash
-git clone https://github.com/amanidy/job-tracker.git
-cd job-tracker
-```
-
-Then open `index.html` in your browser. No installs needed.
-
----
-
-
-
-## 💡 Why I Built This
-
-Tracking job applications in a spreadsheet gets messy fast. I wanted something purpose built a clean UI that shows exactly where every application stands and whether I need to follow up. Built it, used it, and learned a lot about localStorage data management and Chart.js along the way.
-
----
 
 ##  Author
 
 **Arnold Amani**
-- GitHub: [@amanidy](https://github.com/amanidy)
+- GitHub: [@amanidy](https://github.com/iam-amani)
 
 ---
